@@ -115,7 +115,7 @@ Working through this project took a messy, scraped dataset and turned it into a 
 
 ## Project Files
 
-[Excel Workbook](https://github.com/ochiengherman36/Jumia_Product_Performance_Dashboard/blob/main/Excel_jumia_dataset.xlsx)
+[Excel Workbook](https://github.com/pljavano-p/Jumia_Product_Performance_Dashboard/blob/main/Excel_jumia_dataset.xlsx)
 
 ## Reference
 
