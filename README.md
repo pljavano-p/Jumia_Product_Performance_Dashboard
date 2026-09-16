@@ -36,13 +36,13 @@ A rating of 4.5 or a discount of 42 percent doesn't mean much to a PivotTable on
 
 `=[@[old price (Ksh)]]-[@[Current price (Ksh)]]`
 
-![cleaned_dataset2.png](/screenshot/screenshot3.png)
+![cleaned_dataset2.png](/screenshot/Screenshot3.png)
  
 ## 4. Building the Analysis Layer
 
 With the data cleaned and categorized, the next step was turning it into actual answers. I built a separate Analysis sheet to hold three things: a set of key performance indicators, correlation checks between the main variables, and ranked Top 10 tables for rating, reviews, and discount. Figure 4 shows the KPI section, along with the correlations and the Top 10 by Rating table, providing a quick snapshot of the whole dataset: 115 products, an average price of about KSh 1,173, an average discount of 37 percent, an average rating of 3.9, and 723 total reviews.
 
-![analysis1.png](/screenshot4/screenshot4.png)
+![analysis1.png](/screenshot4/Screenshot4.png)
  
 The correlations, also visible in Figure 4, are what actually answer three of the five business questions:
 
@@ -57,21 +57,21 @@ All three values sit close to zero, meaning none of these relationships are stro
 
 Building the Top 10 tables uncovered a bug worth mentioning on its own. Several products shared the same rating, so a simple ranking formula kept returning the same product over and over instead of listing ten different ones. I fixed this by building a "Rank Key" for each ranking, a small formula that nudges each value by a tiny, unique amount based on review count and row number, just enough to break ties without changing the actual order. Figure 5 shows the Top 10 by Reviews and Top 10 by Discount tables, both correctly listing ten distinct products once the fix was applied.
 
-![analysis2.png](/screenshot/screenshot5.png)
+![analysis2.png](/screenshot/Screenshot5.png)
 
 ## 5. PivotTables: Summarizing for the Dashboard
 
 To turn the analysis into something chartable, I built six PivotTables, shown together in Figure 6. Discount Mix and Rating Mix count how many products fall into each category. Engagement by Discount shows average reviews per discount tier. Top Products by Rating, Reviews, and Discount rank the ten best performers in each area. The Discount vs Rating Cross-tab combines both categories, revealing that 22 products have a high discount and only an average or poor rating.
 
-![pivot_tables.png](/screenshot/screenshot6.png)
+![pivot_tables.png](/Screenshot/Screenshot6.png)
  
 ## 6. Building the Dashboard
 
 Everything built so far comes together in one sheet, shown in Figures 7 and 8. It opens with six KPI cards, followed by three scatter charts, three bar charts ranking top products, and two doughnut charts showing category mixes. Slicers for Discount and Rating Category sit near the top, connected to every relevant PivotChart at once, so clicking one button updates several charts together instead of digging through each pivot separately. That connection is what actually makes this a dashboard rather than just a page of static charts.
 
-![dashboard1.png](/screenshot/screenshot7.png)
+![dashboard1.png](/screenshot/Screenshot7.png)
 
-![dashboard2.png](/screenshot/screenshot8.png)
+![dashboard2.png](/screenshot/Screenshot8.png)
 
 ## 7. What Broke and How I Fixed It
 
@@ -97,7 +97,7 @@ Figure 9 shows the final Key Insights panel from the dashboard, summarizing the 
 
 - 22 products need pricing and marketing attention
 
-![key_insights.png](/screenshot/screenshot9.png)
+![key_insights.png](/screenshot/Screenshot9.png)
  
 ## Conclusion
 
