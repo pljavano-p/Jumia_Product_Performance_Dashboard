@@ -42,7 +42,7 @@ A rating of 4.5 or a discount of 42 percent doesn't mean much to a PivotTable on
 
 With the data cleaned and categorized, the next step was turning it into actual answers. I built a separate Analysis sheet to hold three things: a set of key performance indicators, correlation checks between the main variables, and ranked Top 10 tables for rating, reviews, and discount. Figure 4 shows the KPI section, along with the correlations and the Top 10 by Rating table, providing a quick snapshot of the whole dataset: 115 products, an average price of about KSh 1,173, an average discount of 37 percent, an average rating of 3.9, and 723 total reviews.
 
-![analysis1.png](/screenshot4/Screenshot4.png)
+![analysis1.png](/screenshot/Screenshot4.png)
  
 The correlations, also visible in Figure 4, are what actually answer three of the five business questions:
 
