@@ -19,7 +19,7 @@ Before doing any cleaning, I went through the dataset and documented every quali
 
 - Missing values: roughly half the rows had no Review or Rating values, leaving visible blanks throughout the dataset.
 
-![raw_dataset.png](/screenshots/screenshot1.png)
+![raw_dataset.png](/screenshot/screenshot1.png)
 
 ## 2. Cleaning the Data
 
