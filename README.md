@@ -25,7 +25,7 @@ Before doing any cleaning, I went through the dataset and documented every quali
 
 Cleaning began with the Product column, applying `=PROPER(TRIM(A2))` to fix inconsistent spacing and capitalization, followed by Find and Replace to correct acronyms like USB and DIY that got wrongly lowercased. Prices were stripped of currency symbols and commas, review counts had their negative signs removed, and the one price range was resolved to a single value. Ratings were converted from text like "4.5 out of 5" into plain decimals using `=IFERROR(VALUE(LEFT(F2,FIND(" ",F2)-1)),"")`. Figure 2 shows the cleaned dataset.
 
-![cleaned_dataset1.png](/screenshot/screenshot2.png)
+![cleaned_dataset1.png](/screenshot/Screenshot2.png)
 
 ## 3. Enrichment: Turning Raw Numbers into Categories
 A rating of 4.5 or a discount of 42 percent doesn't mean much to a PivotTable on its own, since numbers like that vary slightly and are hard to group. To make the data easier to summarize, I added three enrichment columns: Rating Category, Discount Category, and Discount Amount, as shown in Figure 3. These take the raw numbers and sort them into simple buckets like "Excellent" or "High Discount," which is what actually makes counting, comparing, and charting possible later in the PivotTables and dashboard.
