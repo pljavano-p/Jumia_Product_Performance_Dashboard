@@ -63,7 +63,7 @@ Building the Top 10 tables uncovered a bug worth mentioning on its own. Several 
 
 To turn the analysis into something chartable, I built six PivotTables, shown together in Figure 6. Discount Mix and Rating Mix count how many products fall into each category. Engagement by Discount shows average reviews per discount tier. Top Products by Rating, Reviews, and Discount rank the ten best performers in each area. The Discount vs Rating Cross-tab combines both categories, revealing that 22 products have a high discount and only an average or poor rating.
 
-![pivot_tables.png](/Screenshot/Screenshot6.png)
+![pivot_tables.png](/screenshot/Screenshot6.png)
  
 ## 6. Building the Dashboard
 
